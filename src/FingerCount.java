@@ -55,26 +55,26 @@ public class FingerCount {
 
         String finguerName = "UnComment finguer name values and it works to say what finguer is until 3 hands";
         if (countRest % 2 == 0) {
-            //Esta contando para la derecha (finguerListL)
+            //This is counting to the right (finguerListL)
             if (handNumber == 1) {
                 finguerName = finguerListL[finguerNumberIndex];    
                 System.out.println("Finguer: " + finguerNumberIndex + " (" + finguerName + ")");
                 System.out.println("Hand: " + i + "\n");
             } else{
-                //si la mano en la que estoy es par entonces las posciciones del index cambia
-                if (i % 2 == 0) { //para cuando se encuentra en una mano de en medio
+                //if the hand I am in is even then the index positions change
+                if (i % 2 == 0) { //for when it is in the middle
                     int index = ((handNumber * 5) -5);
                     //finguerName = finguerListL[(index - finguerNumberIndex)];
                     System.out.println("Finguer: " + finguerNumberIndex );//+ " (" + finguerName + ")");
                     System.out.println("Hand: " + i + "\n");
                 } else {
                     int index = ((handNumber * 5) -5);
-                    if ((index < finguerNumberIndex) && (finguerNumberIndex > (index + 5))) {//si se encuentra en la ultima mano
+                    if ((index < finguerNumberIndex) && (finguerNumberIndex > (index + 5))) {//if it is on the last hand
                         //finguerName = finguerListL[(index - finguerNumberIndex)];
                         System.out.println("Finguer: " + finguerNumberIndex );//+ " (" + finguerName + ")");
                         System.out.println("Hand: " + i + "\n");
                     } else{
-                        //si se encuentra en la primer mano
+                        //if it is on the first hand
                         //finguerName = finguerListL[finguerNumberIndex - 1];
                         System.out.println("Finguer: " + finguerNumberIndex );//+ " (" + finguerName + ")");
                         System.out.println("Hand: " + i + "\n");
@@ -83,25 +83,25 @@ public class FingerCount {
             }
 
         } else{
-            //Esta contando para la izquierda (finguerListR)
+            //This counting to the left (finguerListR)
             if (handNumber == 1) {
                 finguerName = finguerListL[finguerNumberIndex];    
                 System.out.println("Finguer: " + finguerNumberIndex + " (" + finguerName + ")");
                 System.out.println("Hand: " + i + "\n");
             } else{
-                if (i % 2 == 0) { //para cuando se encuentra en una mano de en medio
+                if (i % 2 == 0) { //for when it is in the middle
                     int index = ((handNumber * 5) -5);
                     //finguerName = finguerListR[(index - finguerNumberIndex)];
                     System.out.println("Finguer: " + finguerNumberIndex );//+ " (" + finguerName + ")");
                     System.out.println("Hand: " + i + "\n");
                 } else {
                     int index = ((handNumber * 5) -5);
-                    if ((index < finguerNumberIndex) && (finguerNumberIndex > (index + 5))) {//si se encuentra en la ultima mano
+                    if ((index < finguerNumberIndex) && (finguerNumberIndex > (index + 5))) {//if it is on the last hand
                         //finguerName = finguerListR[(index - finguerNumberIndex)];
                         System.out.println("Finguer: " + finguerNumberIndex );//+ " (" + finguerName + ")");
                         System.out.println("Hand: " + i + "\n");
                     } else{
-                        //si se encuentra en la primer mano
+                        //if it is on the first hand
                         //finguerName = finguerListR[finguerNumberIndex - 1];
                         System.out.println("Finguer: " + finguerNumberIndex );//+ " (" + finguerName + ")");
                         System.out.println("Hand: " + i + "\n");
